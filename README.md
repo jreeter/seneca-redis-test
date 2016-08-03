@@ -1,4 +1,4 @@
-Nature of problem:
+#Nature of "problem":
 
 When pinning on just the role:'redis' the client.js topics are built from just that pin.
 
@@ -16,6 +16,8 @@ server.js(pin:'role:sockets) is subscribing to topics:
 
 Line 425 of transport-util.js inside of function listen_topics(initiated by server.js) is looping through and appending 
 the extra 'cmd' parameter to the subscribe topic.
+
+#redis monitor output of running server.js then client.js
 
 ```
 1470238106.350491 [0 127.0.0.1:60168] "info"
